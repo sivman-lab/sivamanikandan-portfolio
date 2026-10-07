@@ -1,0 +1,8 @@
+@import "tailwindcss";
+:root{--bg:#03170e;--card:#082a1b;--green:#004526;--line:rgba(232,197,184,.16);--text:#f3e9e6;--soft:#E8C5C8;--muted:#a3b5aa;--accent:#C85A32;--atext:#EA8A63}
+html{scroll-behavior:smooth;background:var(--bg)}
+body{background:var(--bg);color:var(--text);overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(60rem 30rem at 85% -10%,rgba(0,69,38,.55),transparent 70%),radial-gradient(40rem 25rem at -10% 40%,rgba(200,90,50,.08),transparent 70%)}
+section{scroll-margin-top:5rem}
+:focus-visible{outline:2px solid var(--atext);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
